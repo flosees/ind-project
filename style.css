@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
+    /* background-image: url(/img/logo\ tampa\ bay.svg);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 
@@ -43,11 +46,12 @@ header {
 .menu_link{
     text-decoration: none;
 }
-.last-news{
+.main-about{
     display: block;
+    justify-items: center;
     margin-top: 2vh;
     background-color: white;
-    height: 8vh;
+    height: 6vh;
     margin-left: auto;
     margin-right: auto;
     color: #122797;
@@ -56,18 +60,30 @@ header {
     font-weight: 500;
 }
 
+
 .main-content{
     display: block;
-    height: 50vh;
-    background-color: blanchedalmond;
+    padding: 0 2vh 2vh 2vh;
+    height: 60vh;
+    background-color: whitesmoke;
     margin: 0 9vw 0 9vw;
+    color: #122797;
+    margin-bottom: 2vh;
+}
+.main-content__text, p{
+    color: #122797;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 120%;
+    font-weight: 350;
+    margin-bottom: 2vh;
 }
 
-#Rookie_Report_img{
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
+.main-content__img{
+    display: flex;
+    justify-content: center;
 }
+
 
 
 footer{
