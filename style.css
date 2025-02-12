@@ -1,13 +1,10 @@
 body {
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
-    /* background-image: url(/img/logo\ tampa\ bay.svg);
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 
-*{
+* {
     color: white;
     margin: 0px;
     padding: 0px;
@@ -33,7 +30,7 @@ header {
 }
 
 
-.header_menu{
+.header_menu {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 500;
@@ -43,10 +40,11 @@ header {
     padding: 1.1rem;
 }
 
-.menu_link{
+.menu_link {
     text-decoration: none;
 }
-.main-about{
+
+.main-about {
     display: block;
     justify-items: center;
     margin-top: 2vh;
@@ -61,7 +59,7 @@ header {
 }
 
 
-.main-content{
+.main-content {
     display: block;
     padding: 0 2vh 2vh 2vh;
     /* background-color: whitesmoke; */
@@ -69,7 +67,9 @@ header {
     color: #122797;
     margin-bottom: 2vh;
 }
-.main-content__text, p{
+
+.main-content__text,
+p {
     color: #122797;
     font-size: 1.5rem;
     text-align: justify;
@@ -78,15 +78,36 @@ header {
     margin-bottom: 2vh;
 }
 
+.history__card {
+    display: grid;
+    place-items: center;
+    /* border: #000000 1px solid; */
+    color: #122797;
+    font-weight: 800;
+}
+
+.main-content__history {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 1vh;
+    padding: 0 2vh 2vh 2vh;
+    /* background-color: whitesmoke; */
+    margin: 0 9vw 0 9vw;
+    color: #122797;
+    margin-bottom: 2vh;
+}
 
 
 
 
-footer{
+
+footer {
     background-color: #000000;
 }
 
-.main-content__arena{
+.main-content__arena {
     display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,14 +119,16 @@ footer{
     color: #122797;
     margin-bottom: 2vh;
 }
-.card{
+
+.card {
     display: grid;
     place-items: center;
     color: #122797;
     border: #000000 1px solid;
 }
 
-.card__links{
+.card__links {
     color: #122797;
     font-weight: 800;
+    font-size: 1.1rem;
 }
