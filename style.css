@@ -64,8 +64,7 @@ header {
 .main-content{
     display: block;
     padding: 0 2vh 2vh 2vh;
-    height: 60vh;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     margin: 0 9vw 0 9vw;
     color: #122797;
     margin-bottom: 2vh;
@@ -79,13 +78,34 @@ header {
     margin-bottom: 2vh;
 }
 
-.main-content__img{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 
 footer{
     background-color: #000000;
+}
+
+.main-content__arena{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh;
+    padding: 0 2vh 2vh 2vh;
+    height: 60vh;
+    /* background-color: whitesmoke; */
+    margin: 0 9vw 0 9vw;
+    color: #122797;
+    margin-bottom: 2vh;
+}
+.card{
+    display: grid;
+    place-items: center;
+    color: #122797;
+    border: #000000 1px solid;
+}
+
+.card__links{
+    color: #122797;
+    font-weight: 800;
 }
