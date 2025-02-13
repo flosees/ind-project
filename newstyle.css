@@ -3,15 +3,12 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
 }
 
-
 * {
     color: white;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
 }
-
-/* #122797 */
 
 header {
     display: block;
@@ -29,13 +26,11 @@ header {
     display: block;
 }
 
-
 .header_menu {
     list-style: none;
     font-size: 1.2rem;
     font-weight: 500;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     padding: 1.1rem;
 }
@@ -46,7 +41,6 @@ header {
 
 .main-about {
     display: block;
-    justify-items: center;
     margin-top: 2vh;
     background-color: white;
     height: 6vh;
@@ -58,12 +52,10 @@ header {
     font-weight: 500;
 }
 
-
 .main-content {
     display: block;
     padding: 0 2vh 2vh 2vh;
-    /* background-color: whitesmoke; */
-    margin: 0 9vw 0 9vw;
+    margin: 0 9vw;
     color: #122797;
     margin-bottom: 2vh;
 }
@@ -81,30 +73,19 @@ p {
 .history__card {
     display: grid;
     place-items: center;
-    /* border: #000000 1px solid; */
     color: #122797;
     font-weight: 800;
 }
 
 .main-content__history {
-    display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25vh;
-    gap: 2vh;
+    grid-template-rows: 200px;
+    gap: 1vh;
     padding: 0 2vh 2vh 2vh;
-    /* background-color: whitesmoke; */
-    margin: 0 9vw 0 9vw;
+    margin: 0 9vw;
     color: #122797;
     margin-bottom: 2vh;
-}
-
-
-
-
-
-footer {
-    background-color: #000000;
 }
 
 .main-content__arena {
@@ -113,22 +94,44 @@ footer {
     gap: 5vh;
     padding: 0 2vh 2vh 2vh;
     height: 60vh;
-    /* background-color: whitesmoke; */
-    margin: 0 9vw 0 9vw;
+    margin: 0 9vw;
     color: #122797;
     margin-bottom: 2vh;
 }
 
+footer {
+    background-color: #000000;
+}
+
+/* Стили для карточек */
 .card {
-    display: grid;
-    place-items: center;
-    color: #122797;
-    border: #000000 1px solid;
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    background-image: url('/123.png'); 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden; 
+    border: 1px solid #000000;
 }
 
 .card__links {
-    color: #122797;
-    font-weight: 800;
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white; 
+    font-size: 1.5rem; 
+    font-weight: 800; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease; 
 }
 
+.card__links:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
