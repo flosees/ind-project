@@ -18,56 +18,8 @@ header {
     padding-top: 20px;
 }
 
-#heading-text {
-    width: 100vw;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    display: block;
-}
-
-.header_menu {
-    list-style: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-around;
-    padding: 1.1rem;
-}
-
 .menu_link {
     text-decoration: none;
-}
-
-.main-about {
-    display: block;
-    margin-top: 2vh;
-    background-color: white;
-    height: 6vh;
-    margin-left: auto;
-    margin-right: auto;
-    color: #122797;
-    font-size: 1.7rem;
-    text-align: center;
-    font-weight: 500;
-}
-
-.main-content {
-    display: block;
-    padding: 0 2vh 2vh 2vh;
-    margin: 0 9vw;
-    color: #122797;
-    margin-bottom: 2vh;
-}
-
-.main-content__text,
-p {
-    color: #122797;
-    font-size: 1.5rem;
-    text-align: justify;
-    line-height: 120%;
-    font-weight: 350;
-    margin-bottom: 2vh;
 }
 
 .history__card {
@@ -77,60 +29,289 @@ p {
     font-weight: 800;
 }
 
-.main-content__history {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px;
-    gap: 1vh;
-    padding: 0 2vh 2vh 2vh;
-    margin: 0 9vw;
-    color: #122797;
-    margin-bottom: 2vh;
+.history__card__img{
+    width: 100%;
+    height: 30vh;
 }
 
-.main-content__arena {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5vh;
-    padding: 0 2vh 2vh 2vh;
-    /* height: 60vh; */
-    margin: 0 9vw;
-    color: #122797;
-    margin-bottom: 2vh;
+#heading-text {
+    width: 100vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}
+
+img{
+    width: 100%;
 }
 
 footer {
     background-color: #000000;
+    display: block;
+    width: 100vw;
 }
 
-/* Стили для карточек */
-.card {
-    position: relative;
-    width: 100%;
-    height: 200px; 
-    background-image: url('/img/logo\ tampa\ bay.svg'); 
-    background-size: cover;
-    background-position: center; 
-    overflow: hidden;
+#main-footer{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding-top: 2vh;
 }
 
-.card__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: white; 
-    font-size: 1.5rem; 
-    font-weight: 800; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    transition: background-color 0.3s ease; 
+@media screen and (width > 1080px) {
+    .partners-logo{
+        display: flex;
+        height: 30vh;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .logo{
+        width: 100%;
+        height: 7vh;
+    }
+
+
+    .footer-inf{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    #footer-logo{
+        width: 100%;
+        height: 10vh;
+    }
+
+    .main-images {
+        display: flex;
+        gap: 1vw;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 9vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+
+    .header_menu {
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.1rem;
+    }
+
+
+    .main-about {
+        display: block;
+        margin-top: 2vh;
+        background-color: white;
+        height: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        color: #122797;
+        font-size: 1.7rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main-content {
+        display: block;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 9vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+    .main-content__text,
+    p {
+        color: #122797;
+        font-size: 1.5rem;
+        text-align: justify;
+        line-height: 120%;
+        font-weight: 350;
+        margin-bottom: 2vh;
+    }
+
+
+
+    .main-content__history {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        gap: 1vh;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 9vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+    .main-content__arena {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vh;
+        padding: 0 2vh 2vh 2vh;
+        /* height: 60vh; */
+        margin: 0 9vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+
+
+    /* Стили для карточек */
+    .card {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-image: url('/img/wave.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+        -webkit-filter: brightness(50%);
+        filter: brightness(65%);
+    }
+
+    .card__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    .card__links:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
 
-.card__links:hover {
-    background-color: rgba(0, 0, 0, 0.7); 
+@media screen and (max-width: 1080px) {
+    .main-images {
+        display: flex;
+        gap: 1vw;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 5vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+
+    .header_menu {
+        list-style: none;
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.1rem;
+    }
+
+    .main-about {
+        display: block;
+        margin-top: 2vh;
+        background-color: white;
+        height: 6vh;
+        margin-left: auto;
+        margin-right: auto;
+        color: #122797;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main-content {
+        display: block;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 5vw;
+        color: #122797;
+        margin-bottom: 5vh;
+    }
+
+    .main-content__text,
+    p {
+        color: #122797;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 120%;
+        font-weight: 350;
+        margin-bottom: 2vh;
+    }
+
+    .main-content__history {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        gap: 2vh;
+        padding: 0 2vh 2vh 2vh;
+        margin: 0 5vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+    .main-content__arena {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5vh;
+        padding: 0 2vh 2vh 2vh;
+        /* height: 60vh; */
+        margin: 0 5vw;
+        color: #122797;
+        margin-bottom: 2vh;
+    }
+
+
+
+    /* Стили для карточек */
+    .card {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background-image: url('/img/wave.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+        -webkit-filter: brightness(50%);
+        filter: brightness(65%);
+    }
+
+    .card__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    .card__links:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
