@@ -10,6 +10,8 @@ body {
     text-decoration: none;
 }
 
+
+
 header {
     display: block;
     width: 100vw;
@@ -57,13 +59,30 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    width: 100vw;
+    width: 100%;
     margin-top: 3vh;
     margin-bottom: 3vh;
     padding-top: 2vh;
 }
 
-@media screen and (width > 1080px) {
+@media screen and (width > 1080px){
+    .main-content__grid{
+        height: 80vh;
+        background-color: #122797;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-weight: 600;
+        font-size: 2rem;
+        padding: 2vw;
+    }
+    
+
+
+
     .partners-logo {
         display: flex;
         height: 30vh;
@@ -206,6 +225,7 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+
 
     .partners-logo {
         display: flex;
